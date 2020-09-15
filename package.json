@@ -1,6 +1,6 @@
 {
     "name": "stratum-pool",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "High performance Komodo stratum poolserver in Node.js",
     "keywords": [
         "stratum",
@@ -10,9 +10,9 @@
         "poolserver",
         "komodo"
     ],
-    "homepage": "https://github.com/webworker01/node-stratum-pool",
+    "homepage": "https://github.com/TheComputerGenie/node-stratum-pool",
     "bugs": {
-        "url": "https://github.com/webworker01/node-stratum-pool/issues"
+        "url": "https://github.com/TheComputerGenie/node-stratum-pool/issues"
     },
     "license": "GPL-2.0",
     "author": "webworker01",
@@ -26,19 +26,18 @@
     "main": "lib/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/webworker01/node-stratum-pool.git"
+        "url": "https://github.com/TheComputerGenie/node-stratum-pool.git"
     },
     "dependencies": {
         "async": "^2.6.1",
         "base58-native": "^0.1.4",
         "bignum": "^0.13.0",
-        "bitgo-utxo-lib": "git+https://github.com/miketout/bitgo-utxo-lib.git",
-        "equihashverify": "git+https://github.com/webworker01/equihashverify.git",
-        "merkle-bitcoin": "git+https://github.com/joshuayabut/merkle-bitcoin.git#3606036e3a44aa46e5a16cc6d7beea8e49dec8ef",
-        "promise": "^8.0.2",
-        "verushash": "git+https://github.com/VerusCoin/verushash-node.git"
+        "bitgo-utxo-lib": "VerusCoin/bitgo-utxo-lib",
+        "equihashverify": "TheComputerGenie/equihashverify",
+        "merkle-bitcoin": "git+https://github.com/joshuayabut/merkle-bitcoin.git#ec00ae20ba60d444e150ead03c747695ddaa83a1",
+        "promise": "^8.0.2"
     },
     "engines": {
-        "node": ">=8"
+        "node": ">=11"
     }
 }
