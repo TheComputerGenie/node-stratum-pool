@@ -2,7 +2,7 @@ High performance Stratum poolserver for Komodo in Node.js. One instance of this 
 pools, each with their own daemon and stratum port :)
 
 #### Notice
-This is a module for Node.js that will do nothing on its own. This fork has been modified to move away from the requirements for ZEC and tuned to match the needs of KMD
+This is a module for Node.js that will do nothing on its own. This fork has been modified to move away from the requirements for ZEC and tuned to match the needs of KMD and assetchains
 
 Credits
 -------
