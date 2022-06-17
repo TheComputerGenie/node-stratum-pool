@@ -11,7 +11,7 @@ Found in Old/README.md
 License
 -------
 
-Forked from ComputerGenie repo (deleted)
+reForked to ComputerGenie repo; because: ugh
 
 Released under the GNU General Public License v2
 
