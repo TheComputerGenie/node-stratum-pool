@@ -1,3 +1,5 @@
+[![NPM Audit Report - PR](https://github.com/TheComputerGenie/node-stratum-pool/actions/workflows/npm-audit.yml/badge.svg)](https://github.com/TheComputerGenie/node-stratum-pool/actions/workflows/npm-audit.yml)
+
 High performance Stratum poolserver for Komodo in Node.js. One instance of this software can startup and manage multiple coin
 pools, each with their own daemon and stratum port :)
 

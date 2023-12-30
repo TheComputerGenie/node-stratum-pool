@@ -1,18 +1,30 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "enabled": true,
   "includeForks": true,
-  "extends": ["config:recommended"],
-  "platformAutomerge": true,
-  "labels": ["dependencies"],
+  "semanticCommits": "enabled",
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Renovate Dashboard",
+  "rebaseWhen": "conflicted",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "to {{newVersion}}",
+  "commitMessageSuffix": "",
+  "extends": [
+    "config:base"
+  ],
+  "assignees": [
+    "thecomputergenie"
+  ],
+  "automerge": true,
+  "additionalBranchPrefix": "{{parentDir}}-",
   "packageRules": [
     {
-      "matchDepTypes": ["optionalDependencies"],
-      "addLabels": ["optional"],
-      "updateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true,
-      "automergeType": "pr-comment",
-      "ignoreTests": true
+      "matchPackageNames": ["containerbase/node"],
+      "versioning": "node"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "labels": ["dependencies"],
+      "updateTypes": ["minor", "patch", "pin", "digest"]
     }
-  ],
-  "additionalBranchPrefix": "{{parentDir}}-"
+  ]
 }
