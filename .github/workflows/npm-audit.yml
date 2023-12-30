@@ -1,0 +1,26 @@
+name: NPM Audit Report - PR
+'on':
+  push:
+    branches:
+      - master
+jobs:
+  scan:
+    name: npm audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js '20.x'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+      - name: Install libboost and sodium
+        run: sudo apt-get install -y libboost-all-dev libsodium-dev
+      - name: install dependencies
+        run: npm ci
+      - uses: oke-py/npm-audit-action@v2
+        with:
+          audit_level: moderate
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          issue_assignees: oke-py
+          issue_labels: 'vulnerability,test'
+          dedupe_issues: true
