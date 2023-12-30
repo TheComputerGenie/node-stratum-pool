@@ -11,8 +11,8 @@
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "automergeType": "pr-comment",
-      "ignoreTests": true
+      "ignoreTests": true,
+      "additionalBranchPrefix": "{{parentDir}}-"
     }
-  ],
-  "additionalBranchPrefix": "{{parentDir}}-"
+  ]
 }
