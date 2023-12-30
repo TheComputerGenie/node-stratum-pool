@@ -1,18 +1,22 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "includeForks": true,
+  "automerge": true,
+  "automergeType": "pr",
+  "prCreation": "immediate",
   "extends": ["config:recommended"],
-  "platformAutomerge": true,
-  "labels": ["dependencies"],
+  "platformAutomerge": true,,
+  "ignoreTests": true,
+  "additionalBranchPrefix": "{{parentDir}}-"
   "packageRules": [
     {
-      "matchDepTypes": ["optionalDependencies"],
-      "addLabels": ["optional"],
-      "updateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true,
-      "automergeType": "pr-comment",
-      "ignoreTests": true,
-      "additionalBranchPrefix": "{{parentDir}}-"
+      "matchPackageNames": ["containerbase/node"],
+      "versioning": "node"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "labels": ["dependencies"],
+      "updateTypes": ["minor", "patch", "pin", "digest"]
     }
   ]
 }
