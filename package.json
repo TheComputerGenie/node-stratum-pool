@@ -12,9 +12,9 @@
         "litecoin",
         "scrypt"
     ],
-    "homepage": "https://github.com/VerusCoin/node-stratum-pool",
+    "homepage": "https://github.com/TheComputerGenie/node-stratum-pool",
     "bugs": {
-        "url": "https://github.com/VerusCoin/node-stratum-pool/issues"
+        "url": "https://github.com/TheComputerGenie/node-stratum-pool/issues"
     },
     "license": "GPL-2.0",
     "author": "s-nomp developers",
@@ -26,15 +26,15 @@
     "main": "lib/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/VerusCoin/node-stratum-pool.git"
+        "url": "https://github.com/TheComputerGenie/node-stratum-pool.git"
     },
     "dependencies": {
         "async": "^2.6.1",
         "base58-native": "^0.1.4",
-        "bignum": "^0.13.0",
-        "bitgo-utxo-lib": "git+https://github.com/VerusCoin/bitgo-utxo-lib.git",
-        "equihashverify": "git+https://github.com/s-nomp/equihashverify.git",
-        "verushash": "git+https://github.com/VerusCoin/verushash-node",
+        "bignum": "github:mtl1979/node-bignum#dccf7b7",
+        "bitgo-utxo-lib": "github:TheComputerGenie/bitgo-utxo-lib",
+        "equihashverify": "github:TheComputerGenie/equihashverify",
+        "verushash": "github:TheComputerGenie/verushash-node",
         "merkle-bitcoin": "^1.0.2",
         "promise": "^8.0.1"
     },
