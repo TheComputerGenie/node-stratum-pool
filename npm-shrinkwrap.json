@@ -97,7 +97,7 @@
     },
     "node_modules/bitgo-utxo-lib": {
       "version": "1.5.0",
-      "resolved": "git+ssh://git@github.com/TheComputerGenie/bitgo-utxo-lib.git#d7ee19cb29173e0f6d3c56733c444c11e3589cd0",
+      "resolved": "git+ssh://git@github.com/TheComputerGenie/bitgo-utxo-lib.git#656209402f904caefdfac3edb3c0b093bfd6a3f3",
       "integrity": "sha512-10B3Yh3WvNrhKjxOZUmlPoOuRJ6eBe1PDp5x/D84LDWZZUOThywIE9ntxHsv+z4khtqFV/KBveBhu+jq1hmH7Q==",
       "license": "MIT",
       "dependencies": {
