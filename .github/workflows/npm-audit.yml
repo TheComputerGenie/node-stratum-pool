@@ -17,7 +17,7 @@ jobs:
         run: sudo apt-get install -y libboost-all-dev libsodium-dev
       - name: install dependencies
         run: npm ci
-      - uses: oke-py/npm-audit-action@v2.4.4
+      - uses: oke-py/npm-audit-action@v3.0.0
         with:
           audit_level: moderate
           github_token: '${{ secrets.GITHUB_TOKEN }}'
