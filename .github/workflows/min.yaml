@@ -1,8 +1,8 @@
 name: "Min"
-
+permissions:
+  contents: write
 
 on:
-  push:
     branches:
     - master
 
