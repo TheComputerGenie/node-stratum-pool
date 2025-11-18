@@ -8,7 +8,7 @@ jobs:
     name: npm audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5.0.0
+      - uses: actions/checkout@v5.0.1
       - name: Use Node.js '20.x'
         uses: actions/setup-node@v6.0.0
         with:
